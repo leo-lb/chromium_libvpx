@@ -1437,7 +1437,7 @@ void vp9_iadst8_vsx(int16x8_t *in, int16x8_t *out) {
 
 static void iadst16x8_vsx(int16x8_t *in, int16x8_t *out) {
   int32x4_t tmp0[32], tmp1[32];
-  int16x8_t tmp16_0[8];
+  int16x8_t tmp16_0[16];
   int16x8_t cospi_p01_p31 = vec_mergel(cospi1_v, cospi31_v);
   int16x8_t cospi_p31_m01 = vec_mergel(cospi31_v, cospi1m_v);
   int16x8_t cospi_p05_p27 = vec_mergel(cospi5_v, cospi27_v);
